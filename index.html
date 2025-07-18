@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <title>Sophia's Grievance Portal 💖</title>
   <script>
-  if (window.innerWidth < 768) {
+  const isMobile = /iPhone|Android|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+  if (isMobile) {
     window.location.href = "mobile.html";
-  } 
+  }
   </script>
   <style>
     body {
